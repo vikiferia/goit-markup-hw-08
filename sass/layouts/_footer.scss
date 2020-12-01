@@ -1,0 +1,125 @@
+// .footer-container {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .footer {
+//     padding-top: 61px;
+//     padding-bottom: 61px;
+//     background-color: var(--dark-bg);
+//     color: var(--footer-text-accent);
+
+//     .social-icon {
+//         margin: 0;
+//         padding-right: 0;
+//     }
+//     .social-list {
+//         margin: 0;
+//     }
+
+//     .social-list:not(:last-child) {
+//         padding-right: 10px;
+//     }
+//     .logo {
+//         display: inline-block;
+//         margin-bottom: 19px;
+//     }
+// }
+
+// .footer-content {
+//     display: flex;
+//     width: calc((100% - 30px) / 2);
+// }
+
+// .footer-content-right {
+//     width: calc((100% - 30px) / 2);
+// }
+
+// .footer-content-text {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--white);
+//     margin: 0;
+//     padding: 0;
+//     margin-bottom: 20px;
+//     padding-top: 12px;
+// }
+
+// .footer-svg {
+//     fill: var(--white);
+// }
+
+// .footer-link {
+//     background-color: var(--footer-social);
+// }
+
+// .logo-studio-wight {
+//     color: var(--white);
+// }
+
+// .footer-list {
+//     font-style: normal;
+//     color: var(--footer-text-accent);
+// }
+
+// .map {
+//     display: inline-block;
+//     margin-bottom: 11px;
+//     color: var(--white);
+// }
+
+// .footer-mail {
+//     margin-bottom: 11px;
+// }
+
+// .join {
+//     display: flex;
+//     width: 570px;
+//     height: 50px;
+
+//     input {
+//         width: 358px;
+//         margin-right: 12px;
+//         padding-top: 15px;
+//         padding-bottom: 15px;
+//         padding-left: 16px;
+//         padding-right: 16px;
+//         border-radius: 4px;
+//         border: 1px solid rgba(255, 255, 255, 0.3);
+//         background-color: var(--dark-bg);
+//         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+//         color: var(--footer-text-accent);
+//     }
+// }
+
+// .button-footer {
+//     display: inline;
+//     position: relative;
+//     width: 200px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 28px;
+//     padding-right: 62px;
+//     background: #2196f3;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+// }
+
+// .bt-foot-title::after {
+//     display: inline-block;
+//     position: absolute;
+//     content: '';
+//     height: 24px;
+//     width: 24px;
+//     margin: 0;
+//     padding: 0;
+//     margin-left: 10px;
+//     background-repeat: no-repeat;
+// }
+
+// .icon-send::after {
+//     background-image: url(../images/send.svg);
+// }
