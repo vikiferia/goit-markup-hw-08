@@ -1,6 +1,7 @@
 .clients-container {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;    
+    align-content: center; 
 }
 
 
@@ -20,34 +21,93 @@
     margin-bottom: 30px;
 }
 
-.clients-mob {
+
+
+
+ .clients-list {  
+     display: inline-block;    
+    width: 150px;         
+    // height: 90px;
+    // margin-bottom: 30px;
+
+    // align-items: center; 
+    // align-content: center;
+    text-align: center;
     
-    // display: flex;
-    width: calc((100% - 90px) / 3);
-    height: 90px;
-    margin-bottom: 30px;
-
-}
-
-// .clients-list-mob {
-   
-//     width: calc((100% - 30px) / 2);
-
-// }
-
- .clients-mob .clients-list {
-     display: inline;
-     
-    // width: 210px;
-// align-items: center;
-    
-    height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     &:hover,
     &:focus {
         border: 1px solid var(--accent-color);
     }
+}
+
+.grid .clients-list:nth-child(2n + 1) {
+    margin-right: 30px;
+}
+
+
+
+.clients-icon-link {
+    display: inline-block;
+    // align-items: center; 
+    // align-content: center;      
+    // text-align: center;
+    
+    &:hover .clients-icon-svg,
+    &:focus .clients-icon-svg {
+        fill: var(--accent-color);
+    }
+}
+
+
+.clients-icon-svg {
+     
+    fill: var(--svg);
+}
+
+
+.logo1 {
+     width: 47.27px;
+    height: 49.23px;
+    margin-top: 18px;   
+    margin-bottom: 18.77px; 
+}
+
+.logo2 {
+   width: 40px;
+    height: 52px;
+    margin-top: 19px;    
+    margin-bottom: 19px;
+  }
+
+.logo3 {
+    width: 41px;
+    height: 42.6px;
+    margin-top: 24px; 
+     margin-bottom: 23.4px;
+  }
+
+.logo4 {
+    width: 79.66px;
+    height: 42.02px;
+    margin-top: 24px;
+     margin-bottom: 23.98px;
+}
+
+.logo5 {
+    width: 59px;
+    height: 47px;
+    margin-top: 22px;   
+     margin-bottom: 21px; 
+}
+
+.logo6 {
+    width: 88.48px;
+    height: 45.44px;
+    margin-top: 22px;
+    margin-bottom: 22.56px;   
+   
 }
 
 

@@ -198,6 +198,7 @@ img {
 .clients-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  align-content: center;
 }
 
 .section-clients {
@@ -215,20 +216,74 @@ img {
   margin-bottom: 30px;
 }
 
-.clients-mob {
-  width: calc((100% - 90px) / 3);
-  height: 90px;
-  margin-bottom: 30px;
-}
-
-.clients-mob .clients-list {
-  display: inline;
-  height: 90px;
+.clients-list {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.clients-mob .clients-list:hover, .clients-mob .clients-list:focus {
+.clients-list:hover, .clients-list:focus {
   border: 1px solid var(--accent-color);
+}
+
+.grid .clients-list:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.clients-icon-link {
+  display: inline-block;
+}
+
+.clients-icon-link:hover .clients-icon-svg,
+.clients-icon-link:focus .clients-icon-svg {
+  fill: var(--accent-color);
+}
+
+.clients-icon-svg {
+  fill: var(--svg);
+}
+
+.logo1 {
+  width: 47.27px;
+  height: 49.23px;
+  margin-top: 18px;
+  margin-bottom: 18.77px;
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+.logo3 {
+  width: 41px;
+  height: 42.6px;
+  margin-top: 24px;
+  margin-bottom: 23.4px;
+}
+
+.logo4 {
+  width: 79.66px;
+  height: 42.02px;
+  margin-top: 24px;
+  margin-bottom: 23.98px;
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+  margin-top: 22px;
+  margin-bottom: 21px;
+}
+
+.logo6 {
+  width: 88.48px;
+  height: 45.44px;
+  margin-top: 22px;
+  margin-bottom: 22.56px;
 }
 /*# sourceMappingURL=main.css.map */
