@@ -1,21 +1,24 @@
-.section-features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.section-features {    
     background-color: var(--white);
 }
 
- .features-list {
-    // display: flex;
-    // justify-content: space-between;
+ .features-list {    
     .contant-box:not(:last-child) {
         margin-bottom: 30px;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 
 
-.contant-box {
-    //  width: calc((100% -90px) / 4);
+
+.contant-box {    
      p {
         margin-top: 0;
         margin-bottom: 0;
@@ -31,6 +34,18 @@
         background-position: center;
 }
    
+}
+
+@media screen and (min-width: 768px) {
+    .contant-box {        
+     width: calc((100% - 30px) / 2);
+     }
+}
+
+@media screen and (min-width: 1200px) {
+  .contant-box {        
+     width: calc((100% - 90px) / 4);
+     }  
 }
 
 .icon-antenna::before {
@@ -64,61 +79,3 @@
  
 
 
-
-// .section-features {
-//     padding-top: 94px;
-//     padding-bottom: 47px;
-//     background-color: var(--white);
-// }
-
-// .features-list {
-//     display: flex;
-//     justify-content: space-between;
-//     .contant-box:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
-
-// .contant-box {
-//     width: calc((100% -90px) / 4);
-//     p {
-//         margin-top: 0;
-//         margin-bottom: 0;
-//     }
-//     &::before {
-//         display: block;
-//         content: '';
-//         height: 120px;
-//         background-color: var(--light-bg);
-//         margin-bottom: 30px;
-//         background-size: 70px 70px;
-//         background-repeat: no-repeat;
-//         background-position: center;
-//     }
-// }
-
-// .icon-antenna::before {
-//     background-image: url(../images/antenna.svg);
-// }
-
-// .icon-clock::before {
-//     background-image: url(../images/clock.svg);
-// }
-
-// .icon-diagram::before {
-//     background-image: url(../images/diagram.svg);
-// }
-
-// .icon-astronaut::before {
-//     background-image: url(../images/astronaut.svg);
-// }
-
-// .section-title-features {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     margin-top: 0;
-//     margin-bottom: 10px;
-//     color: var(--black);
-// }
