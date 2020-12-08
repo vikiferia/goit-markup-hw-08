@@ -13,45 +13,59 @@
 </head>
 
 <body class="page">
-    <header class="header">
-        <!--Навигация-->
-        <div class="container header-container">
+        <header class="header container header-container">
+            <!--Навигация-->
+        
             <nav class="navigation">
+        
                 <a class="logo link" href="./index.html">
                     <span>Web</span><span class="logo-studio">Studio</span>
                 </a>
-                <div class="site-nav">
-                    <ul class="site-nav list">
+        
+                <button type="button" class="button-menu is-open" aria-expanded="falce" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg class="menu-icon-svg hover-time" aria-label="Переключатель мобильного меню" width="40" height="40">
+                        <use class="menumobi" href="./images/sprite.svg#menumobi"></use>
+                        <use class="closemobi" href="./images/sprite.svg#closemobi"></use>
+                    </svg>
+        
+                </button>
+        
+                <div class="menu-container" id="menu-container" data-menu>
+                    <div class="site-nav">
+                        <ul class="site-nav list">
                         <li class="site-nav item"><a class="link hover-time" href="./index.html">Студия
                             </a></li>
                         <li class="site-nav item"><a class="link nav-line line hover-time"
                                 href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="site-nav item"><a class="link hover-time" href="">Контакты</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="contacts">
-                <ul class="contacts list">
-                    <li class="contacts item">
-                        <a class="mail link contacts-link hover-time" href="mailto:info@devstudio.com">
-                            <svg class="contacts-icon-svg envelope hover-time">
-                                <use href="./images/sprite.svg#envelope"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contacts item">
-                        <a class="phone link hover-time" href="tel:+380961111111">
-                            <svg class="contacts-icon-svg smartphone hover-time">
-                                <use href="./images/sprite.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
+                        </ul>
+                        </div>
+                        <div class="contacts">
+                            <ul class="contacts list">
+                                <li class="contacts item">
+                                    <a href="mailto:info@devstudio.com" class="mail link hover-time">
+                                        <svg class="contacts-icon-svg envelope hover-time">
+                                            <use href="./images/sprite.svg#envelope"></use>
+                                        </svg>info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="contacts item">
+                                    <a href="tel:+380961111111" class="phone link hover-time">
+                                        <svg class="contacts-icon-svg smartphone hover-time">
+                                            <use href="./images/sprite.svg#smartphone"></use>
+                                        </svg>+38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                        </nav>
+                        
+                        
+                        
+                        </header>
     <main>
         <!--Секция наши работы-->
         <section class="section-portfolio">
@@ -70,7 +84,12 @@
 
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img class="grid-img" src="./images/img5.jpg" alt="Технокряк" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec1.jpg 1x, ./images/portfdec2@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab1.jpg 1x, ./images/portftab1@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob1.jpg 1x, ./images/portfmob1@2x.jpg 2x" media="(max-width: 767px)" />
+                                <img class="grid-img" src="./images/img5.jpg" alt="Технокряк" />
+                                </picture>                                
 
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
@@ -89,7 +108,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img6.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec2.jpg 1x, ./images/portfdec2@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab2.jpg 1x, ./images/portftab2@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob2.jpg 1x, ./images/portfmob2@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/img6.jpg" alt="Постер New Orlean vs Golden Star" />
+
+                                </picture>
+                                
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -106,7 +132,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img7.jpg" alt="Ресторан Seafood" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec3.jpg 1x, ./images/portfdec3@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab3.jpg 1x, ./images/portftab3@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob3.jpg 1x, ./images/portfmob3@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/img7.jpg" alt="Ресторан Seafood" />
+
+                                </picture>
+                               
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -123,7 +156,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img8.jpg" alt="Проект Prime" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec4.jpg 1x, ./images/portfdec4@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab4.jpg 1x, ./images/portftab4@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob4.jpg 1x, ./images/portfmob4@2x.jpg 2x" media="(max-width: 767px)" />
+
+                                <img src="./images/img8.jpg" alt="Проект Prime" />
+                                </picture>
+                                
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -140,7 +180,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img9.jpg" alt="Проект Boxes" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec5.jpg 1x, ./images/portfdec5@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab5.jpg 1x, ./images/portftab5@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob5.jpg 1x, ./images/portfmob5@2x.jpg 2x" media="(max-width: 767px)" />
+
+                                <img src="./images/img9.jpg" alt="Проект Boxes"  />
+                                </picture>
+                              
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -157,7 +204,15 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img10.jpg" alt="Inspiration has no Borders" width="370" />
+                                <picture>
+                                <source srcset="./images/portfdec6.jpg 1x, ./images/portfdec6@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./images/portftab6.jpg 1x, ./images/portftab6@2x.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./images/portfmob6.jpg 1x, ./images/portfmob6@2x.jpg 2x" media="(max-width: 767px)" />
+
+                                    <img src="./images/img10.jpg" alt="Inspiration has no Borders"/>
+
+                                </picture>
+                                
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -174,7 +229,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img11.jpg" alt="Издание Limited Edition" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec7.jpg 1x, ./images/portfdec7@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab7.jpg 1x, ./images/portftab7@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob7.jpg 1x, ./images/portfmob7@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/img11.jpg" alt="Издание Limited Edition"  />
+
+                                </picture>
+                              
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -191,7 +253,14 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img12.jpg" alt="Проект LAB" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec8.jpg 1x, ./images/portfdec8@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab8.jpg 1x, ./images/portftab8@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob8.jpg 1x, ./images/portfmob8@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/img12.jpg" alt="Проект LAB" />
+
+                                </picture>
+                                
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -208,7 +277,15 @@
                     <li class="gallery-portfolio">
                         <a class="link portfolio-link" href="">
                             <div class="menu-img">
-                                <img src="./images/img13.jpg" alt="Growing Business" width="370" />
+                                <picture>
+                                    <source srcset="./images/portfdec9.jpg 1x, ./images/portfdec9@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/portftab9.jpg 1x, ./images/portftab9@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/portfmob9.jpg 1x, ./images/portfmob9@2x.jpg 2x" media="(max-width: 767px)" />
+
+                                        <img src="./images/img13.jpg" alt="Growing Business" />
+
+                                </picture>
+                            
                                 <div class="menu-overlay">
                                     <p class="menu-text">Технокряк это современная площадка распространения
                                         коронавируса. Компании
@@ -233,7 +310,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-content">
-                <div class="footer-content-right">
+                <div class="footer-content-tabl footer-content-right">
                     <a class="logo link" href="./index.html">
                         <span class="logo-web">Web</span><span class="logo-studio-wight">Studio</span>
                     </a>
@@ -243,12 +320,12 @@
                         <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
                     </address>
                 </div>
-                <div class="footer-content-right">
+                <div class="footer-content-tabl footer-content-right">
                     <h3 class="footer-content-text">Присоединяйтесь</h3>
                     <ul class="list social-icon">
                         <li class="social-list">
-                            <a class="social-icon-link footer-link hover-time" href="http://instagram.com"
-                                target="_blank" rel="Web Studio" aria-label="Instagran">
+                            <a class="social-icon-link footer-link hover-time" href="http://instagram.com" target="_blank"
+                                rel="Web Studio" aria-label="Instagran">
                                 <svg class="social-icon-svg footer-svg">
                                     <use href="./images/sprite.svg#instagram">
                                     </use>
@@ -264,16 +341,16 @@
                             </a>
                         </li>
                         <li class="social-list">
-                            <a class="social-icon-link footer-link hover-time" href="http://facebook.com"
-                                target="_blank" rel="Web Studio" aria-label="Facebook">
+                            <a class="social-icon-link footer-link hover-time" href="http://facebook.com" target="_blank"
+                                rel="Web Studio" aria-label="Facebook">
                                 <svg class="social-icon-svg footer-svg">
                                     <use href="./images/sprite.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list footer-social-list">
-                            <a class="social-icon-link footer-link hover-time" href="http://linkedin.com"
-                                target="_blank" rel="Web Studio" aria-label="Linkedin">
+                            <a class="social-icon-link footer-link hover-time" href="http://linkedin.com" target="_blank"
+                                rel="Web Studio" aria-label="Linkedin">
                                 <svg class="social-icon-svg footer-svg">
                                     <use href="./images/sprite.svg#linkedin"></use>
                                 </svg>
@@ -284,23 +361,23 @@
             </div>
             <div class="footer-content">
                 <div class="footer-content-right">
-
+    
                     <h3 class="footer-content-text">Подпишитесь на рассылку</h3>
-                    <form class=" form footer-form">
+                    <form class="footer-form">
                         <div class="join">
-                            <input type="email" name="mail" id="mail" placeholder="E-mail" autofocus
+                            <input class="join-wrap" type="email" name="mail" id="mail" placeholder="E-mail"
                                 autocomplete="off" />
-
-                            <button class="button button-footer" type="submit">
+    
+                            <button class="button button-footer join-wrap" type="submit">
                                 <span class="bt-foot-title icon-send">Подпиcаться</span>
                             </button>
                         </div>
                     </form>
                 </div>
-
-
-
-
+    
+    
+    
+    
             </div>
         </div>
     </footer>
