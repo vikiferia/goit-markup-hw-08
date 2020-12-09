@@ -36,10 +36,10 @@
     }
 }
 
-.maidy {
-    display: flex;
-    justify-content: space-between;
-}
+// .maidy {
+//     display: flex;
+//     justify-content: space-between;
+// }
 
 .header-container .navigation {
     position: relative;
@@ -69,6 +69,12 @@
     padding: 0;
     border: 0;
     background-color: var(--white);
+     &:hover {
+        cursor: pointer;
+    }
+     &:hover {
+        fill: var(--accent-color);
+    }
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -92,8 +98,13 @@
     padding-bottom: 60px;
     text-align: center;
     background-color: var(--white);
+    z-index: 999;
     &.is-open {
         display: block;
+        @media screen and (min-width: 768px) {
+          display: inline-flex;  
+        }
+        
     }
 
     @media screen and (max-width: 767px) {
@@ -115,10 +126,13 @@
 }
 
 .site-nav {
+     display: flex;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     align-items: center;
+    flex-direction: column ;
+
 
     .item:not(:last-child) {
         margin-bottom: 40px;
@@ -136,7 +150,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        display: flex;
+       
+        flex-direction: row ;
         font-size: 14px;
         line-height: 1.14;
 
@@ -148,13 +163,13 @@
 }
 
 .nav-line::after {
-    display: inline-block;
+    display: block;
     width: 100%;
     content: '';
     position: absolute;
     height: 4px;
     margin: 0;
-    margin-top: 28px;
+    margin-top: 8px;
     background-repeat: no-repeat;
     background-size: cover;
 
