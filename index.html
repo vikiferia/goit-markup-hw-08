@@ -14,29 +14,33 @@
 
 
 <body class="page">
-    <header class="header container header-container">
+    <header class="header ">
         <!--Навигация-->
-        
+        <div class="container header-container">
             <nav class="navigation">
-                
+
                 <a class="logo link" href="./index.html">
                     <span>Web</span><span class="logo-studio">Studio</span>
                 </a>
-                
-                <button type="button" class="button-menu is-open" aria-expanded="falce" aria-controls="menu-container" data-menu-button>
-                            <svg class="menu-icon-svg hover-time" aria-label="Переключатель мобильного меню" width="40" height="40">
-                                <use class="menumobi" href="./images/sprite.svg#menumobi"></use>
-                                <use class="closemobi" href="./images/sprite.svg#closemobi"></use>
-                            </svg>
-                            
+
+                <button type="button" class="button-menu is-open" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg class="menu-icon-svg hover-time" aria-label="Переключатель мобильного меню" width="40"
+                        height="40">
+                        <use class="menumobi" href="./images/sprite.svg#menumobi"></use>
+                        <use class="closemobi" href="./images/sprite.svg#closemobi"></use>
+                    </svg>
+
                 </button>
-                
-                <div class="menu-container is-open" id="menu-container" data-menu>
+
+                <div class="menu-container" id="menu-container" data-menu>
                     <div class="site-nav">
                         <ul class="site-nav list">
-                            <li class="site-nav item"><a class="link nav-line line hover-time" href="./index.html">Студия
+                            <li class="site-nav item"><a class="link nav-line line hover-time"
+                                    href="./index.html">Студия
                                 </a></li>
-                            <li class="site-nav item"><a class="link hover-time" href="./portfolio.html">Портфолио</a></li>
+                            <li class="site-nav item"><a class="link hover-time" href="./portfolio.html">Портфолио</a>
+                            </li>
                             <li class="site-nav item"><a class="link hover-time" href="">Контакты</a></li>
                         </ul>
                     </div>
@@ -60,9 +64,9 @@
                     </div>
                 </div>
             </nav>
-            
-            
-        
+        </div>
+
+
     </header>
 
     <main>
@@ -112,32 +116,35 @@
                     <ul class="list grid">
                         <li class="gallery-item">
                             <picture>
-                                <source srcset="./images/workdec1.jpg 1x, ./images/workdec1@2x.jpg 2x" media="(min-width: 1200px)" />
-                                                            
+                                <source srcset="./images/workdec1.jpg 1x, ./images/workdec1@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
                                 <img src="./images/box1.jpg" alt="box1" width="370" />
-                            
+
                             </picture>
-                            
+
                             <p class="work-text">Десктопные приложения</p>
                         </li>
                         <li class="gallery-item">
                             <picture>
-                                <source srcset="./images/workdec2.jpg 1x, ./images/workdec2@2x.jpg 2x" media="(min-width: 1200px)" />
-                            
-                            <img src="./images/box2.jpg" alt="box2" width="370" height="294" />
-                            
+                                <source srcset="./images/workdec2.jpg 1x, ./images/workdec2@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <img src="./images/box2.jpg" alt="box2" width="370" height="294" />
+
                             </picture>
-                            
+
                             <p class="work-text">Мобильные приложения</p>
                         </li>
                         <li class="gallery-item">
                             <picture>
-                                <source srcset="./images/workdec3.jpg 1x, ./images/workdec3@2x.jpg 2x" media="(min-width: 1200px)" />
-                            
+                                <source srcset="./images/workdec3.jpg 1x, ./images/workdec3@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
                                 <img src="./images/box3.png" alt="box3" width="370" />
-                            
+
                             </picture>
-                          
+
                             <p class="work-text">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -152,12 +159,15 @@
                 <ul class="list grid">
                     <li class="gallery-team">
                         <picture>
-                            <source srcset="./images/comandec1.jpg 1x, ./images/comandec1@2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="./images/comantab1.jpg 1x, ./images/comantab1@2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="./images/comanmob1.jpg 1x, ./images/comanmob1@2x.jpg 2x" media="(max-width: 767px)" />                           
+                            <source srcset="./images/comandec1.jpg 1x, ./images/comandec1@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/comantab1.jpg 1x, ./images/comantab1@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/comanmob1.jpg 1x, ./images/comanmob1@2x.jpg 2x"
+                                media="(max-width: 767px)" />
                             <img src="./images/img1.jpg" alt="Игорь Демьяненко" />
                         </picture>
-                        
+
                         <div class="team-person">
                             <h3 class="time">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
@@ -200,11 +210,14 @@
                     </li>
                     <li class="gallery-team">
                         <picture>
-                            <source srcset="./images/comandec2.jpg 1x, ./images/comandec2@2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="./images/comantab2.jpg 1x, ./images/comantab2@2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="./images/comanmob2.jpg 1x, ./images/comanmob2@2x.jpg 2x" media="(max-width: 767px)" />
-                        <img src="./images/img2.jpg" alt="Ольга Репина" />
-                        </picture>                        
+                            <source srcset="./images/comandec2.jpg 1x, ./images/comandec2@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/comantab2.jpg 1x, ./images/comantab2@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/comanmob2.jpg 1x, ./images/comanmob2@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/img2.jpg" alt="Ольга Репина" />
+                        </picture>
                         <div class="team-person">
                             <h3 class="time">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
@@ -247,12 +260,15 @@
                     </li>
                     <li class="gallery-team">
                         <picture>
-                            <source srcset="./images/comandec3.jpg 1x, ./images/comandec3@2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="./images/comantab3.jpg 1x, ./images/comantab3@2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="./images/comanmob3.jpg 1x, ./images/comanmob3@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/comandec3.jpg 1x, ./images/comandec3@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/comantab3.jpg 1x, ./images/comantab3@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/comanmob3.jpg 1x, ./images/comanmob3@2x.jpg 2x"
+                                media="(max-width: 767px)" />
                             <img src="./images/img3.jpg" alt="Николай Тарасов" />
                         </picture>
-                        
+
                         <div class="team-person">
                             <h3 class="time">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -293,13 +309,16 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="gallery-team">                                              
-                               <picture>
-                                    <source srcset="./images/comandec4.jpg 1x, ./images/comandec4@2x.jpg 2x" media="(min-width: 1200px)" />
-                                    <source srcset="./images/comantab4.jpg 1x, ./images/comantab4@2x.jpg 2x" media="(min-width: 768px)" />
-                                    <source srcset="./images/comanmob4.jpg 1x, ./images/comanmob4@2x.jpg 2x" media="(max-width: 767px)" />
-                                <img src="./images/img4.jpg" alt="Михаил Ермаков" />
-                                </picture>
+                    <li class="gallery-team">
+                        <picture>
+                            <source srcset="./images/comandec4.jpg 1x, ./images/comandec4@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/comantab4.jpg 1x, ./images/comantab4@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/comanmob4.jpg 1x, ./images/comanmob4@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/img4.jpg" alt="Михаил Ермаков" />
+                        </picture>
                         <div class="team-person">
                             <h3 class="time">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
@@ -349,58 +368,64 @@
         <section class="section-clients">
             <div class="container clients-container">
                 <h3 class="clients-title">Постоянные клиенты</h3>
-                    <ul class="grid list">
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://yaco" target="_blank" rel="YA & CO" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo1 hover-time">
-                                    <use href="./images/sprite.svg#logo1">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://tagline" target="_blank" rel="Company Nagline here" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo2 hover-time">
-                                    <use href="./images/sprite.svg#logo2">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://company" target="_blank" rel="Company" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo3 hover-time">
-                                    <use href="./images/sprite.svg#logo3">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://foster" target="_blank" rel="Foster Peters" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo4 hover-time">
-                                    <use href="./images/sprite.svg#logo4">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://brand" target="_blank" rel="Brand" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo5 hover-time">
-                                    <use href="./images/sprite.svg#logo5">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="clients-list hover-time">
-                            <a class="clients-icon-link" href="http://tagline" target="_blank" rel="Company Tagline" aria-label="YA & CO">
-                                <svg class="clients-icon-svg logo6 hover-time">
-                                    <use href="./images/sprite.svg#logo6">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>             
-                                      
-               
+                <ul class="grid list">
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://yaco" target="_blank" rel="YA & CO"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo1 hover-time">
+                                <use href="./images/sprite.svg#logo1">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://tagline" target="_blank" rel="Company Nagline here"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo2 hover-time">
+                                <use href="./images/sprite.svg#logo2">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://company" target="_blank" rel="Company"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo3 hover-time">
+                                <use href="./images/sprite.svg#logo3">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://foster" target="_blank" rel="Foster Peters"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo4 hover-time">
+                                <use href="./images/sprite.svg#logo4">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://brand" target="_blank" rel="Brand"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo5 hover-time">
+                                <use href="./images/sprite.svg#logo5">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list hover-time">
+                        <a class="clients-icon-link" href="http://tagline" target="_blank" rel="Company Tagline"
+                            aria-label="YA & CO">
+                            <svg class="clients-icon-svg logo6 hover-time">
+                                <use href="./images/sprite.svg#logo6">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+
             </div>
         </section>
     </main>
@@ -464,7 +489,8 @@
                     <h3 class="footer-content-text">Подпишитесь на рассылку</h3>
                     <form class="footer-form">
                         <div class="join">
-                            <input class="join-wrap" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="off" />
+                            <input class="join-wrap" type="email" name="mail" id="mail" placeholder="E-mail"
+                                autocomplete="off" />
 
                             <button class="button button-footer join-wrap" type="submit">
                                 <span class="bt-foot-title icon-send">Подпиcаться</span>
@@ -525,7 +551,7 @@
 
                 <div class="form-file">
                     <label for="user-message" class="form-content">Комментарий</label>
-                    <textarea class="message" name="user-message" id="user-message" rows="7"
+                    <textarea class="message" name="user-message" id="user-message" rows="5"
                         placeholder="Введите текст"> </textarea>
                 </div>
 
@@ -535,9 +561,9 @@
                     Соглашаюсь с рассылкой и принимаю
                     <a class="link link-consent" href="" rel="" target="_blank">Условия договора</a>
                 </label>
-            <div class="modal-box-but">
-                <button class="button button-modal" type="submit">Отправить</button>
-            </div>
+                <div class="modal-box-but">
+                    <button class="button button-modal" type="submit">Отправить</button>
+                </div>
             </form>
 
 
@@ -548,7 +574,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    
+
 </body>
 
 

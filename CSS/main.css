@@ -81,6 +81,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -101,7 +102,6 @@ img {
 }
 
 .list {
-  /* display: inline-block; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -117,31 +117,19 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header .logo {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header .logo {
-    margin-right: 93px;
-  }
-}
-
 .header-container {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 500;
-  width: 100%;
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     display: block;
     align-items: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
@@ -149,8 +137,21 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header-container {
+    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container .logo {
+    margin-right: 93px;
   }
 }
 
@@ -217,7 +218,7 @@ img {
   padding-bottom: 60px;
   text-align: center;
   background-color: var(--white);
-  z-index: 999;
+  z-index: 1;
 }
 
 .menu-container.is-open {
@@ -293,7 +294,7 @@ img {
   width: 100%;
   content: '';
   position: absolute;
-  height: 4px;
+  height: 2px;
   margin: 0;
   margin-top: 8px;
   background-repeat: no-repeat;
@@ -303,8 +304,15 @@ img {
 @media screen and (min-width: 768px) {
   .nav-line::after {
     display: block;
-    margin-top: 28px;
+    margin-top: 32px;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-line::after {
+    height: 4px;
+    margin-top: 28px;
   }
 }
 
@@ -327,9 +335,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: inline-flex;
+    flex-direction: row;
   }
   .contacts .item:not(:last-child) {
     margin-right: 50px;
@@ -344,10 +361,17 @@ img {
   letter-spacing: 0.02em;
 }
 
+.contacts .item:nth-child(2n) {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts .item {
     margin-bottom: 10px;
     font-size: 12px;
+  }
+  .contacts .item:nth-child(2n) {
+    margin-bottom: 0px;
   }
 }
 
@@ -449,6 +473,7 @@ img {
 .hero {
   text-align: center;
   background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headermob.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -546,6 +571,7 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-icon {
@@ -662,7 +688,7 @@ img {
 }
 
 .message {
-  height: 120px;
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -735,6 +761,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -749,20 +776,22 @@ img {
 }
 
 .modal {
+  display: flex;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 609px;
-  min-width: 450px;
+  max-height: 609px;
+  max-width: 450px;
   background-color: var(--white);
   border-radius: 4px;
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-height: 581px;
-    min-width: 528px;
+    max-height: 581px;
+    max-width: 528px;
   }
 }
 
@@ -1012,14 +1041,17 @@ img {
   }
 }
 
+.grid .gallery-team {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .grid .gallery-team {
     margin-bottom: 30px;
   }
-}
-
-.grid .gallery-team:nth-child(2n + 1) {
-  margin-right: 30px;
+  .grid .gallery-team:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1385,6 +1417,7 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {

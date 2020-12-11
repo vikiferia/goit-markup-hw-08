@@ -5,41 +5,38 @@
             rgba(47, 48, 58, 0.4)
         ),
         url(../images/headermob.jpg);
-    // background-size: 480px 400px;
+    background-size: cover;
     background-repeat: no-repeat;
     // background-position: 50% 50%;
     background-position: left bottom;
-        @media screen and (min-device-pixel-ratio: 2),
+
+    @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {    
+        screen and (min-resolution: 2dppx) {
         background-image: url(../images/headermob2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/headertab.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/headertab@2x.jpg);
         }
+    }
 
-        @media screen and (min-width: 768px) {
-            background-image: url(../images/headertab.jpg);
+    @media screen and (min-width: 1200px) {
+        background-size: 1600px 600px;
+        background-image: url(../images/headerdec.jpg);
 
-                @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {    
-                background-image: url(../images/headertab@2x.jpg);
-        } 
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/headerdec@2x.jpg);
         }
-
-        @media screen and (min-width: 1200px) {
-            background-size: 1600px 600px;
-            background-image: url(../images/headerdec.jpg);
-
-                @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {    
-                background-image: url(../images/headerdec@2x.jpg);
-        } 
-        }
-
-
+    }
 }
-
-
 
 .hero-content {
     display: flex;
@@ -61,8 +58,8 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 106px;
-       font-size: 44px;
-    line-height: 1.38; 
+        font-size: 44px;
+        line-height: 1.38;
     }
 }
 
@@ -71,27 +68,7 @@
     padding-right: 32px;
     margin-bottom: 58px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 106px;
     }
 }
-
-
-// .hero-title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.38;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: var(--white);
-//     padding-top: 200px;
-//     margin-top: 0;
-//     margin-bottom: 30px;
-//     max-width: 696px;
-//     text-align: center;
-// }
-
-// .hero-container .button {
-//     margin-bottom: 200px;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-// }

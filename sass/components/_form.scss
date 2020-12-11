@@ -70,7 +70,8 @@
 }
 
 .message {
-    height: 120px;
+    display: flex;
+    // height: 40px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -85,6 +86,10 @@
         border-color: var(--accent-color);
         color: var(--main-text-color);
     }
+
+    // @media screen and (min-width: 1200px) {
+    // height: 120px;
+    // }
 
 }
 

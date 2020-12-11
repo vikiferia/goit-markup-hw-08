@@ -1,7 +1,48 @@
 .header {
+    
     background-color: var(--white);
     border-bottom: 1px solid #ececec;
 
+    // @media screen and (min-width: 768px) {
+    //     .logo {
+    //         margin-right: 88px;
+    //     }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     .logo {
+    //         margin-right: 93px;
+    //     }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     display: flex;
+    // }
+}
+
+.header-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+     background-color: var(--white);
+    // width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    
     @media screen and (min-width: 768px) {
         .logo {
             margin-right: 88px;
@@ -12,27 +53,6 @@
         .logo {
             margin-right: 93px;
         }
-    }
-}
-
-.header-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        align-items: center;
-        padding-top: 26px;
-        padding-bottom: 26px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
     }
 }
 
@@ -93,12 +113,15 @@
     display: none;
 }
 
+
+
+
 .menu-container {
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
     background-color: var(--white);
-    z-index: 999;
+    z-index: 1;
     &.is-open {
         display: block;
         @media screen and (min-width: 768px) {
@@ -167,7 +190,7 @@
     width: 100%;
     content: '';
     position: absolute;
-    height: 4px;
+    height: 2px;
     margin: 0;
     margin-top: 8px;
     background-repeat: no-repeat;
@@ -175,8 +198,13 @@
 
     @media screen and (min-width: 768px) {
         display: block;
-        margin-top: 28px;
+        margin-top: 32px;
         width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 4px;  
+       margin-top: 28px;
     }
 }
 
@@ -196,8 +224,18 @@
         }
     }
 
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    
+
+
     @media screen and (min-width: 1200px) {
         display: inline-flex;
+        flex-direction: row;
 
         .item:not(:last-child) {
             margin-right: 50px;
@@ -212,9 +250,18 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
+    &:nth-child(2n) {
+       margin-bottom: 0px;  
+    }    
+
     @media screen and (min-width: 768px) {
         margin-bottom: 10px;
         font-size: 12px;
+
+        &:nth-child(2n) {
+           margin-bottom: 0px; 
+        }
+        
     }
 
     @media screen and (min-width: 1200px) {
