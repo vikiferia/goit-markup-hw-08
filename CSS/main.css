@@ -340,6 +340,7 @@ img {
     display: flex;
     flex-direction: column;
     text-align: start;
+    align-items: flex-start;
   }
 }
 
@@ -347,6 +348,7 @@ img {
   .contacts {
     display: inline-flex;
     flex-direction: row;
+    align-items: center;
   }
   .contacts .item:not(:last-child) {
     margin-right: 50px;
