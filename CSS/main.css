@@ -1239,6 +1239,8 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1278,6 +1280,12 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .social-list {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .social-list {
     margin: 0;
@@ -1310,7 +1318,13 @@ img {
 
 .footer-list {
   font-style: normal;
-  margin-bottom: 46px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-content-text {
@@ -1327,12 +1341,12 @@ img {
 
 .map {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   color: var(--white);
 }
 
 .footer-mail {
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 
 .footer-form {
@@ -1434,6 +1448,10 @@ img {
   margin-bottom: 30px;
 }
 
+.gallery-portfolio:first-child {
+  max-height: 404px;
+}
+
 .gallery-portfolio:hover, .gallery-portfolio:focus {
   box-shadow: 1px 1px 1px 1px rgba(110, 63, 63, 0.12), 1px 1px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(150, 47, 47, 0.16);
 }
@@ -1450,6 +1468,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .gallery-portfolio {
+    max-width: 370px;
     margin-top: 30px;
     flex-basis: calc(100% / 3 - 30px);
   }
@@ -1491,7 +1510,7 @@ img {
 .menu-overlay {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1px;
   width: 100%;
   height: 100%;
   padding-left: 24px;

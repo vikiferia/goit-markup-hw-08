@@ -2,6 +2,8 @@
 @media screen and (min-width: 1200px){
     .footer-container {
         display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -39,6 +41,11 @@
     .social-list {
         margin: 0;
         margin-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        
+    }
     }
 }
 
@@ -46,6 +53,8 @@
     .social-list {
         margin: 0;
     }
+
+
 }
 
 .logo-studio-wight {
@@ -76,7 +85,11 @@
 
 .footer-list {
        font-style: normal;
-       margin-bottom: 46px;
+       margin-bottom: 60px;
+
+       @media screen and (min-width: 1200px) {
+          margin-bottom: 0px; 
+       }
 }
 
 .footer-content-text {
@@ -95,12 +108,12 @@
 
 .map {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     color: var(--white);
 }
 
 .footer-mail {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
 }
 
 .footer-form {
