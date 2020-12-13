@@ -3,21 +3,7 @@
     background-color: var(--white);
     border-bottom: 1px solid #ececec;
 
-    // @media screen and (min-width: 768px) {
-    //     .logo {
-    //         margin-right: 88px;
-    //     }
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     .logo {
-    //         margin-right: 93px;
-    //     }
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    // }
+   
 }
 
 .header-container {
@@ -25,7 +11,7 @@
     padding-bottom: 10px;
     font-weight: 500;
      background-color: var(--white);
-    // width: 100%;
+    
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -56,10 +42,7 @@
     }
 }
 
-// .maidy {
-//     display: flex;
-//     justify-content: space-between;
-// }
+
 
 .header-container .navigation {
     position: relative;
@@ -278,10 +261,7 @@
     align-items: center;
     &:hover,
     &:focus {
-        // font-weight: 500;
-        // font-size: 18px;
-        // line-height: 1.17;
-        // letter-spacing: 0.02em;
+        
         color: var(--accent-color);
     }
 }
